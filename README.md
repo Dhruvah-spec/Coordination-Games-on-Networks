@@ -4,7 +4,7 @@ Coordination games involve decision-making scenarios in which two or more player
 
 This project aims to model the problem of individuals deciding whether to adopt a network good as a coordination game. These situations require individuals to align their decisions with those of other people, while other people are simultaneously trying to do the same thing. The role played by network topology in facilitating coordination is explored
 
-# Structure
+## Structure
 This study treats the problem of individuals making adoption decisions as a round-based coordination game taking place within a network structure. Nodes in the network represent individuals and links represent friendships. For every round each player chooses between two strategies- Adopt (A) and Don’t Adopt (D) with payoffs given by the following table:
 
 Player/Players’s friends	A	D
