@@ -29,11 +29,11 @@ Variant 2 - Under the second variation, the players playing the rule will not in
 This study simulates all possible combinations of the heuristic rules discussed above within different network topologies for every state the game can take (players 1, 3, 4 playing A and players 5, 6 playing D, for example, is one possible state). 
 
 ## Network Topologies
-| Topology            | Description                                                                 | Key Properties                                                                                  | Typical Use Cases                                      |
-|---------------------|-----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| Complete Graph      | Every node is connected to every other node.                                | Maximum connectivity; shortest possible path lengths; very dense (O(n²) edges).                | Benchmark models, theoretical analysis, consensus studies |
-| Small-World Graph   | Nodes are mostly locally connected with a few long-range random links.      | High clustering + short average path lengths; “six degrees of separation” effect.              | Social networks, diffusion processes, real-world networks |
-| Star Graph          | One central node connected to all peripheral nodes; peripherals not connected to each other. | Centralized structure; hub dominates communication; vulnerable to hub failure.                 | Client-server systems, centralized coordination models   |
-| Spoke and Hub Graph | Similar to a star, but may include multiple hubs or layered hub-spoke structures. | Semi-centralized; improved robustness over pure star; efficient routing via hubs.              | Transportation networks, airline routes, logistics systems |
+| Topology              | Description                                                                 | Key Properties                                                                                  |
+|-----------------------|-----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| Small-World Graph     | Nodes are mostly locally connected with a few randomly rewired long-range links. | High clustering coefficient; short average path lengths; captures “small-world” phenomenon.    |
+| Random Graph          | Edges are formed randomly between pairs of nodes with a fixed probability. | Low clustering (typically); predictable degree distribution (binomial/Poisson); simple baseline model. |
+| Barabási–Albert Graph | Network grows over time with new nodes attaching preferentially to high-degree nodes. | Scale-free structure; power-law degree distribution; presence of hubs; robust yet vulnerable to hub removal. |
 
+## Findings
 
