@@ -36,4 +36,8 @@ This study simulates all possible combinations of the heuristic rules discussed 
 | Barabási–Albert Graph | Network grows over time with new nodes attaching preferentially to high-degree nodes. | Scale-free structure; power-law degree distribution; presence of hubs; robust yet vulnerable to hub removal. |
 
 ## Findings
-
+Some rule sets guarantee convergence to a nash equilibrium within three rounds, no matter what the initial state was
+Small-world networks allow for a larger number of rule sets that gurantee convergence to a nash equilibrium than barabasi-albert or random networks
+The number of rule sets that gurantee convergence to a nash drop drastically for all networks when self-inclusion logic is removed
+Rule I, ie the fixed rule, is almost never played in the rule sets that gurantee convergence to a nash
+These results suggest the importance of information generation for enabling consensus
