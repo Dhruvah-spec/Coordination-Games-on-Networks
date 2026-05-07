@@ -1,6 +1,7 @@
-## Simulates all possible outcomes of the game 3 rounds
+## Simulates all possible outcomes  of the game (for every possible starting state and rule configuration) 3 rounds
 ## No Self-Inclusion for Rule 3
 ## Gives the copy sets for each player
+## Classfies each outcome as 'deadlock', 'oscillating', or 'concensus' based on how states change from round to round
 
 import itertools
 import pandas as pd
