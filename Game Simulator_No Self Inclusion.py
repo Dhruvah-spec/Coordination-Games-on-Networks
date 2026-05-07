@@ -1,3 +1,7 @@
+## Simulates all possible outcomes of the game 3 rounds
+## No Self-Inclusion for Rule 3
+## Gives the copy sets for each player
+
 import itertools
 import pandas as pd
 import networkx as nx
