@@ -20,16 +20,16 @@ def solve_game():
         for neighbor in G.neighbors(player):
             neighbor_choice = strategy_profile[neighbor]
             
-            if my_choice == 'G':
-                if neighbor_choice == 'G':
-                    payoff += 1  # Friend plays G when I play G
+            if my_choice == 'A':
+                if neighbor_choice == 'A':
+                    payoff += 1  # Friend plays G when I play A
                 else:
                     payoff -= 1  # Friend plays N when I play G
-            else: # My choice is 'N'
+            else: # My choice is 'D'
                 if neighbor_choice == 'A':
-                    payoff -= 1  # Friend plays G when I play N
+                    payoff -= 1  # Friend plays A when I play D
                 else:
-                    payoff += 0  # Friend plays N when I play N
+                    payoff += 0  # Friend plays D when I play D
         return payoff
 
     # 3. Check every possible strategy combination
